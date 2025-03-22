@@ -10,7 +10,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 # Load trained CNN-LSTM model
-MODEL_PATH = "/home/ubuntu/speexhfix/backend_speechfix/my_model.keras"
+MODEL_PATH = "/home/ubuntu/speexhfix/backend_speechfix/my_model (2).keras"
   # Change this if your model path is different
 model = tf.keras.models.load_model(MODEL_PATH)
 
