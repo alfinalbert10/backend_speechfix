@@ -10,7 +10,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 # Load trained CNN-LSTM model
-MODEL_PATH = "/home/ubuntu/speexhfix/backend_speechfix/my_model (2).keras"
+MODEL_PATH = "/home/ubuntu//my_model (2).keras"
   # Change this if your model path is different
 model = tf.keras.models.load_model(MODEL_PATH)
 
@@ -94,5 +94,5 @@ def predict():
 # ...existing code...
 # Run Flask app
 if __name__ == "__main__":
-    app.run(debug=True, host="localhost", port=5000)
+    app.run(debug=True, host="0.0.0.0", port=5000)
     print("Server is running on http://localhost:5000/") 
